@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma"       content="no-cache">
   <meta http-equiv="Expires"      content="0">
   <meta name="viewport"           content="width=device-width, initial-scale=1.0">
-  <title>Cutters Choice Radio</title>
+  <title>Our Story – Cutters Choice Radio</title>
   
   <!-- Main stylesheet (bump v= to bust cache) -->
   <link rel="stylesheet" href="style.css?v=1748349660086">
@@ -52,10 +52,8 @@
       text-decoration: none !important;
       margin: 0 0.5rem !important;
     }
-    #main-nav .social-icon {
-      margin-left: 0.5rem !important;
-      font-size: 1.2rem !important;
-      vertical-align: middle !important;
+    #main-nav .nav-left a.active {
+      text-decoration: underline;
     }
     @media (max-width: 768px) {
       #main-nav .nav-left,
@@ -74,15 +72,7 @@
     }
   </style>
 
-  <!-- Other head scripts -->
-  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js" defer></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MSGZZ5QL6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}  
-    gtag('js', new Date());
-    gtag('config', 'G-3MSGZZ5QL6');
-  </script>
+  <!-- GIF‐SWAP SCRIPT WILL COME AT BOTTOM -->
 </head>
 
 <body>
@@ -118,13 +108,12 @@
   <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
   <nav id="main-nav">
     <div class="nav-item nav-left">
-      <a href="#history">HISTORY</a>
+      <a href="our-story.html" class="active">OUR STORY</a>
     </div>
     <div class="nav-item nav-center">
-      <a href="index-ourDJS.html">OUR DJS</a>
+      <a href="index-ourDJS.html">THE DJS</a>
     </div>
     <div class="nav-item nav-right">
-      <!-- MERCH now points at merch.html -->
       <a href="merch.html">MERCH</a>
       <a href="https://facebook.com/cutterschoiceradio" target="_blank" class="social-icon">
         <i class="fab fa-facebook-f"></i>
@@ -135,73 +124,57 @@
     </div>
   </nav>
 
-  <!-- ─── MAIN GRID CONTENT ──────────────────────────────────────────────── -->
-  <div class="grid-container">
-    <!-- CHAT SECTION -->
-    <section class="chat">
-      <h2>Cutters Chat</h2>
-      <iframe
-        title="Cutters Choice Radio Chat"
-        src="https://app.radiocult.fm/embed/chat/cutters-choice-radio?theme=midnight&primaryColor=%235A8785&corners=sharp"
-        width="100%" height="700" frameborder="0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        seamless>
+  <!-- ─── OUR STORY CONTENT ─────────────────────────────────────────────────── -->
+  <main class="story-content" style="padding: 2rem; max-width: 800px; margin: auto; color: #fafafa; background: #000;">
+    <article>
+      <p><strong>Who are these people anyway?<br>
+      What are these chancers all about?<br>
+      Cutters Choice Radio<br>
+      The myth, the legend, the fairy story... and now the movie. This is Cutters Choice Radio.</strong></p>
+
+      <p>Cutters Choice Radio is the wayward, rebellious, offspring of station boss Benny Fonzarelli.</p>
+
+      <p>Way back in the Summer of 2011, Benny Fonzarelli, a young punk hailing from Wycombe and his pal Xavi from Barcelona had plans to start a band. Like all young punks they wanted to get their music out there and find a release from the trials and tribulations of everyday life.</p>
+
+      <p>That band was Cutters Choice.</p>
+
+      <h2>The Mad Women's Shit Sessions</h2>
+      <p>Starting out just once a week, Benny and Xavi were soon joined by Benny’s brother Chester Bothworlds and good friend West Ham Dave. Xavi eventually moved to California but Cutters Choice Radio continued, as did Benny’s ‘Mad Womans Shit Sessions’ show. Giving long established radio show formats a run for their money, Traffic Island Dicks anyone?</p>
+
+      <p>The list of quality (and lairy) DJs grew and in addition to Chester & Dave, new additions Rolex Tharsus and Burns Van De Graaf joined the party. Every Wednesday since has been Cutters Choice Radio night and they have built up a solid foundation of listeners. On top of that, Benny, Chez, Dave and two other friends, Mick and Smiler had formed the Irreverence Soundsystem and put on regular Wycombe-based parties that have run for many years now. If you remember them then you probably weren’t there.</p>
+
+      <h2>The Unofficial Isolation Station</h2>
+      <p>Fast forward to March 2020 and Covid 19 came and gatecrashed the party. Bad news for the world in general but Cutters Choice rose from the flames like a beer sodden phoenix. The inevitable lockdown happened and around that time DJ Country Cockney who Benny and Chester had been chasing for a while to do a show had suddenly found himself with far too much time on his hands.</p>
+
+      <p>Keen to rekindle his love of DJing he agreed to do a show and was immediately bowled over by the open-minded nature of both the CCR family and the warmth, musical knowledge and killer humour of the listeners. He was hooked. So much so that he jumped in with both feet and started playing for up to 5 hours every day (if you managed to listen to every single hour of Country Cockney’s lockdown shows then let us know and we’ll send you a certificate).</p>
+
+      <h2>Take it to the next level</h2>
+      <p>Never one to not take things to the next level Country Cockney also worked closely with Benny on a recruitment drive to find other jocks that had found themselves in a similar situation. The response was incredibly positive and both the number of DJs and the number of listeners rapidly grew. Country Cockney got even more involved and became a partner in the station.</p>
+
+      <h2>International DJs</h2>
+      <p>The recruitment drive didn’t end there. Country Cockney’s online push for new “talent” resulted in a number of DJs joining from all parts of the globe. Cutters Choice Radio now has DJs based in New Zealand, Australia, Norway, USA, Canada and Spain with an increasingly diverse mix of styles and flavours.</p>
+
+      <h2>Radio Cult</h2>
+      <p>In 2024 a big move in the history of the station took place with the switch to using Radio Cult as a new streaming service which increased audio quality and allowed for the first time for the station to stream in high quality 320. This move wasn’t without its tech hiccups but was necessary to provide the audio quality that bangers deserve.</p>
+
+      <h2>Relentless flavas, significant bangers</h2>
+      <p>Today, Cutters Choice Radio has over 40 extremely talented DJs on its roster and offers quality music 24/7. It’s also very much retained its ‘anything goes’ mentality: You can expect to hear music right across the spectrum with a wide variety of genres covered, often just in one show! The DJs are all passionate about what they do and about ensuring that their shows are a cut above what you’d hear elsewhere. It’s that, as well as the incredible listener base that makes this station what it is and helps it to continue to grow at such a rate.</p>
+    </article>
+
+    <section class="story-video" style="margin-top: 2rem; text-align: center;">
+      <h2>Watch “Cutters Choice Radio: The Documentary”</h2>
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/6lcWDYT681g"
+              title="Cutters Choice Radio Documentary"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
       </iframe>
-      <div class="chat-actions">
-        <button class="popout-btn" onclick="openChatPopup()">Pop Out Chat</button>
-      </div>
-      <div class="rc-user-list-container">
-        <div class="rc-user-list"></div>
-      </div>
     </section>
-
-    <!-- LIVE PLAYER SECTION -->
-    <section class="live-player">
-      <h2 id="now-dj">Live Now</h2>
-      <div class="player-container">
-        <iframe id="inlinePlayer"
-          title="Cutters Choice Radio player"
-          src="https://app.radiocult.fm/embed/square-player/cutters-choice-radio?theme=midnight&primaryColor=%235A8785&corners=sharp"
-          allow="autoplay" loading="lazy">
-        </iframe>
-        <div id="now-archive">Loading archive show…</div>
-        <button id="popOutBtn" class="popout-btn">Pop Out Player</button>
-        <button id="chatPopupBtn" class="popout-btn chat-btn-mobile" onclick="openChatPopup()">Chat</button>
-      </div>
-      <h3>This Week’s Shows</h3>
-      <img
-        id="now-art"
-        src="https://i.imgur.com/EHhS47F.png"
-        alt="Current DJ Artwork"
-        loading="lazy"
-      >
-    </section>
-
-    <!-- SCHEDULE SECTION -->
-    <section class="schedule">
-      <h2 class="schedule-heading">This Week’s Lineup</h2>
-      <div class="schedule-scroll" id="schedule-container">
-        <p>Loading this week’s schedule…</p>
-      </div>
-    </section>
-
-    <!-- MIXCLOUD ARCHIVE SECTION -->
-    <section class="mixcloud">
-      <h2>Latest Archived Shows</h2>
-      <div id="mixcloud-list"></div>
-      <div class="add-mixcloud">
-        <input id="mixcloud-url" type="text" placeholder="Paste Mixcloud URL here…">
-        <button onclick="addMixcloud()">Add Show</button>
-      </div>
-    </section>
-  </div> <!-- end grid-container -->
+  </main>
 
   <!-- ─── FOOTER ─────────────────────────────────────────────────────────── -->
   <footer class="banner"></footer>
-
-  <!-- Your scripts -->
-  <script src="script.js?v=1748349660086" defer></script>
-  <script src="slideshow.js?v=1748349660086" defer></script>
 
   <!-- GIF‐SWAP SCRIPT: alternates GIF sets every 2 animation loops -->
   <script>
