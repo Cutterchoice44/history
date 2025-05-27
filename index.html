@@ -18,15 +18,12 @@
   <!-- INLINE NAV STYLING -->
   <style>
     :root { --brand-teal: #5A8785; }
-    /* NAV styling */
     #main-nav {
       display: flex !important;
       justify-content: space-between !important;
       align-items: center !important;
       width: 100% !important;
-      padding: 0.56rem 0.75rem !important;
-      margin: 0 !important;
-      box-sizing: border-box !important;
+      padding: 0.5rem 1rem !important;
       background-image: url("/images/bricks.png") !important;
       background-repeat: repeat-x !important;
       background-position: center center !important;
@@ -35,9 +32,9 @@
       border-bottom: 2px solid var(--brand-teal) !important;
     }
     #main-nav .nav-item { flex: 1 !important; }
-    #main-nav .nav-left   { text-align: left !important; }
+    #main-nav .nav-left { text-align: left !important; }
     #main-nav .nav-center { text-align: center !important; }
-    #main-nav .nav-right  { text-align: right !important; }
+    #main-nav .nav-right { text-align: right !important; }
     #main-nav a {
       color: #fff !important;
       font-family: 'Bebas Neue', sans-serif !important;
@@ -48,30 +45,26 @@
     }
     @media (max-width: 768px) {
       #main-nav .nav-left,
-      #main-nav .nav-right {
-        display: none !important;
-      }
+      #main-nav .nav-right { display: none !important; }
       #main-nav .nav-center {
         display: block !important;
         width: 100% !important;
         text-align: center !important;
-      }
-      #main-nav .nav-center a {
-        display: inline-block !important;
-        margin: 0 auto !important;
       }
     }
   </style>
 
   <!-- STORY PAGE STYLES -->
   <style>
+    /* Remove all borders from story sections */
     main.story-content,
-    .story-section {
-      border: none !important;
-    }
+    .story-section,
+    .story-section h2 { border: none !important; }
+
     main.story-content {
       width: 70%;
       margin: 2rem auto;
+      padding: 0;
       background: #000;
       color: #fafafa;
       font-family: 'Bebas Neue', sans-serif;
@@ -100,10 +93,11 @@
       padding: 0;
       margin: 0;
     }
+    /* Responsive 16:9 embed */
     .story-video .video-wrapper {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%; /* 16:9 aspect */
+      padding-bottom: 56.25%;
       margin: 1rem 0;
     }
     .story-video .video-wrapper iframe {
@@ -112,7 +106,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      border: none;
     }
     .back-home {
       display: inline-block;
