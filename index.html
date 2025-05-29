@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- INLINE NAV STYLING -->
+  <!-- INLINE NAV STYLING (unchanged) -->
   <style>
     :root { --brand-teal: #5A8785; }
     #main-nav {
@@ -54,72 +54,49 @@
     }
   </style>
 
-  <!-- LOOSER “OUR STORY” STYLES -->
+  <!-- OUR STORY STYLES (no borders!) -->
   <style>
-    /* Container */
     main.story-content {
-      max-width: 1000px;
+      max-width: 800px;
       width: 90%;
-      margin: 2rem auto;
+      margin: 3rem auto;
       padding: 0;
       font-family: 'Bebas Neue', sans-serif;
       color: #fafafa;
     }
-
-    /* Section spacing */
     .story-section {
-      padding: 2rem 0;
+      padding: 2rem 1rem;
     }
-
-    /* Decorative divider */
-    .story-separator {
-      border: 0;
-      border-top: 1px dashed var(--brand-teal);
-      margin: 1rem 0;
-      opacity: 0.6;
+    /* Only add extra space between sections */
+    .story-section + .story-section {
+      margin-top: 2.5rem;
     }
-
-    /* Intro */
     .story-intro h1 {
       font-size: 3rem;
       font-style: italic;
-      margin-bottom: 1rem;
       color: var(--brand-teal);
+      margin-bottom: 1rem;
     }
     .story-intro p {
       font-size: 1.4rem;
       line-height: 1.6;
     }
-
-    /* Section headings */
     .story-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2.4rem;
+      margin-bottom: 0.75rem;
+      color: var(--brand-teal);
       text-transform: uppercase;
-      position: relative;
     }
-    .story-section h2::after {
-      content: '';
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: var(--brand-teal);
-      margin-top: 0.5rem;
-    }
-
-    /* Paragraphs */
     .story-section p {
       font-size: 1.2rem;
       line-height: 1.6;
-      margin: 0.75rem 0;
+      margin: 0.5rem 0;
     }
-
-    /* Video */
     .story-video .video-wrapper {
       position: relative;
       width: 100%;
       padding-bottom: 56.25%;
-      margin: 1.5rem 0;
+      margin-top: 1.5rem;
     }
     .story-video iframe {
       position: absolute;
@@ -129,8 +106,6 @@
       height: 100%;
       border: none;
     }
-
-    /* Back link */
     .back-home {
       display: inline-block;
       font-size: 1.4rem;
@@ -149,14 +124,14 @@
     <div class="header-gif-right"></div>
     <div class="header-gif-left"></div>
     <div class="logo-container">
-      <img class="logo" src="/images/logo.png" alt="Cutters Choice Radio Logo" loading="lazy">
+      <img class="logo" src="/images/logo.png" alt="CCR Logo" loading="lazy">
     </div>
     <div class="title">
       <h1>Cutters Choice Radio</h1>
       <p class="tagline">The home of relentless flavas and significant bangers!</p>
     </div>
     <div class="logo-container">
-      <img class="logo" src="/images/logo.png" alt="Cutters Choice Radio Logo" loading="lazy">
+      <img class="logo" src="/images/logo.png" alt="CCR Logo" loading="lazy">
     </div>
   </header>
 
@@ -170,82 +145,55 @@
     </div>
     <div class="nav-item nav-right">
       <a href="merch.html">MERCH</a>
-      <a href="https://facebook.com/cutterschoiceradio" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com/cutterschoiceradio" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/cutterschoiceradio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/cutterschoiceradio" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </nav>
 
   <!-- OUR STORY CONTENT -->
   <main class="story-content">
-
-    <!-- Intro from mock -->
     <section class="story-section story-intro">
       <h1>Make yourself at home…</h1>
       <p>
-        We are an open-minded and musically diverse radio station, fast approaching our <strong>10th year</strong> of broadcasting.  
-        With over <strong>40 experienced</strong> and super-talented DJs bringing you a wide range of quality shows covering every genre thinkable. :contentReference[oaicite:1]{index=1}
+        We are an open-minded and musically diverse radio station, fast approaching our <strong>10th year</strong> of broadcasting. With over <strong>40 experienced</strong> DJs bringing you a wide range of quality shows covering every genre thinkable.
       </p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- Origins -->
     <section class="story-section">
       <h2>Our Roots</h2>
-      <p>Cutters Choice Radio is the wayward, rebellious offspring of station boss Benny Fonzarelli. Back in the summer of 2011, Benny—a young punk from Wycombe—teamed up with Xavi from Barcelona to scratch that creative itch. That band was called Cutters Choice, and it was only the beginning.</p>
+      <p>Cutters Choice Radio is the rebellious offspring of station boss Benny Fonzarelli. In summer 2011, Benny—a punk from Wycombe—teamed up with Xavi from Barcelona to scratch that creative itch. That band was Cutters Choice, and the journey began.</p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- The Shit Sessions -->
     <section class="story-section">
       <h2>The Mad Women’s Shit Sessions</h2>
-      <p>What started as a once-a-week punk-fuelled experiment grew into a full-blown radio revolution—and “Traffic Island Dicks” became legend. DJs like Chester Bothworlds, West Ham Dave, Rolex Tharsus, and Burns Van De Graaf joined the party, and every Wednesday has been CCR night ever since.</p>
+      <p>What started as a once-a-week punk experiment grew into a radio revolution—“Traffic Island Dicks” became legend as DJs Chester Bothworlds, West Ham Dave, Rolex Tharsus, and Burns Van De Graaf joined the party.</p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- Lockdown Era -->
     <section class="story-section">
       <h2>The Unofficial Isolation Station</h2>
-      <p>March 2020: Covid-19 gate-crashed the party, but CCR rose like a beer-sodden phoenix. Country Cockney took the mic, broadcasting marathon lockdown sets that hooked listeners worldwide—and earned himself a permanent seat at the table.</p>
+      <p>March 2020: Covid-19 gate-crashed the party, but CCR rose like a beer-sodden phoenix. Country Cockney’s marathon lockdown sets hooked listeners worldwide—and earned him a permanent seat at the table.</p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- Next Level -->
     <section class="story-section">
       <h2>Take It to the Next Level</h2>
-      <p>Country Cockney’s recruitment push brought fresh jocks into the fold, and CCR’s roster—and listener base—exploded. Soon he was not just spinning tunes, but steering the ship as a full partner in Cutters Choice Radio.</p>
+      <p>Country Cockney’s recruitment drive brought fresh jocks into the fold. CCR’s roster—and listener base—exploded, and he became a full partner in Cutters Choice Radio.</p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- International DJs -->
     <section class="story-section">
       <h2>International DJs</h2>
-      <p>Now you’ll hear DJs from New Zealand, Australia, Norway, USA, Canada, Spain—and beyond. A truly global collective, united by one rule: anything goes.</p>
+      <p>Hear DJs from New Zealand, Australia, Norway, the USA, Canada, Spain—and beyond. A global collective where anything goes.</p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- Radio Cult -->
     <section class="story-section">
       <h2>Radio Cult</h2>
-      <p>In 2024 we made the leap to Radio Cult’s 320 kbps stream. There were tech hiccups, sure—but for “significant bangers,” nothing but the best will do.</p>
+      <p>In 2024 we switched to Radio Cult’s 320 kbps stream. There were tech hiccups, but for “significant bangers,” nothing less than the best will do.</p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- Today -->
     <section class="story-section">
       <h2>Relentless Flavas, Significant Bangers</h2>
-      <p>Today CCR is 24/7 quality mayhem, with over 40 DJs covering genres from jungle to footwork to UK hardcore—all on one fearless station.</p>
+      <p>Today CCR is 24/7 quality mayhem, with 40+ DJs covering everything from jungle to footwork to UK hardcore—all under one fearless station.</p>
     </section>
 
-    <div class="story-separator"></div>
-
-    <!-- Documentary Video -->
     <section class="story-section story-video">
       <h2>Watch “Cutters Choice Radio: The Documentary”</h2>
       <div class="video-wrapper">
